@@ -20,7 +20,7 @@
         Enter your address here
         </textarea>
     </form> -->
-    <form>
+    <!-- <form method="post" action="script/subscribe.pl" style="background-color:rgb(131, 93, 153);">
       <h1>Select your Free Hot Drink</h1>
       <input type="radio" name="Drink" value="Tea" />Tea
       <br />
@@ -29,8 +29,7 @@
       <input type="radio" name="Drink" value="Hot Choc" />Hot Choc
       <br />
       <h1>Select your Cake Slices - Max of 2</h1>
-      <!-- Multiple element is not working -->
-      <select id="cake" name="cake" size="5" multiple>
+            <select id="cake" name="cake" size="5" multiple>
         <option value="None">None</option>
         <option value="Carrot Cake">Carrot Cake</option>
         <option value="Cheese Cake">Cheese Cake</option>
@@ -38,8 +37,7 @@
         <option value="Coffee Cake">Coffee Cake</option>
       </select>
       <br />
-      <!-- Drop down creation element is not working -->
-      <input list="Dietary Requirements" />
+            <input list="Dietary Requirements" />
       <datalist id="dietyary Requirements">
         <option value="Dairy"></option>
         <option value="Gluten"></option>
@@ -47,7 +45,43 @@
       </datalist>
       <br />
       <input type="submit" name="Submitbtn" value="Place Order" />
-    </form>
+    </form> -->
+
+    <!-- <form method="post" action="script/subscribe.pl">
+      <fieldset>
+        <legend>Your Details</legend>
+        <br />
+        Confirm your name:
+        <input type="text" autofocus="true" required />
+        Enter your email:
+        <input type="email" name="email" />
+        <br />
+        Enter your url:
+        <input type="url" name="url" />
+        <br />
+        Enter your Mobile Number:
+        <input type="number" min="1" max="11" steps="2" name="phonenumber" />
+      </fieldset>
+      <fieldset>
+        <legend>Randoms</legend>
+        <br />
+        Enter a Range:
+        <input type="range" min="1" max="10" name="OurService" value="9" />
+        <br />
+        Enter a Date in American Format:
+        <input type="date" name="My Birthday" />
+        <br />
+        What would you like to search?
+        <input type="search" q="searchproducts" />
+        <br />
+        What isyour favourite Colour?
+        <input type="color" name="myfavouritecolour" />
+        <br />
+        What is your Credit Card Number?
+        <input type="text" pattern="[0-9]{13-16}" name="creditcardnumber" />
+        <br />
+      </fieldset>
+    </form> -->
 
     <!-- Create form with the following criteria:
     Action to redirect to "index.html"
@@ -57,5 +91,29 @@
     Name, Email and Password input fields
     Gender radio selection
     Button with the value of "Sign Up!" -->
+
+        <form method="Post" action="index.html">
+            <h1>Sign Up form</h1>
+            <fieldset>
+                <Legend>Your Basic Information</Legend>
+                <label for="uname">User Name:</label>
+                <input id="uname" type="text" name="Username" autofocus="true" required />
+                <br/>
+                <label for="uemail">User Email:</label> 
+                <input id="email" type="email" name="Useremail" />
+                <br/>
+                <label for="password">Password:</label>
+                <input id="password" type="password" pattern="[0-9]{12}"/>
+                <br/>
+                <label for="Gender">Gender:</label>
+                <br/>
+                <input id="Gender" type="radio" name="Female" value="Female" />Female
+                <br/>
+                <input id="Gender" type="radio" name="Male" value="Male" />Male
+                <br/>
+                <br/>
+                <button type="button">Sign Up!</button>
+            </fieldset>
+        </form>
   </body>
 </html>
