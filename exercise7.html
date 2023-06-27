@@ -7,18 +7,55 @@
     <title>Exercise 7</title>
 </head>
 <body>
-    <p>
-    Create form with the following criteria:
+    <!-- <form method="post" action="script/subscribe.pl">
+        Please enter your name:
+        <input type="Text" placeholder="Enter your username" name="UserName"/>
+        <input type="Text" value="John Smith" name="UserName"/>
+        <br/>
+        <button type="Submit" name="OKbtn" value="OK">OK</button>
+        <button type="Reset" name="Resetbtn" value="Reset">Reset</button>
+        <button type="button">Click Bait</button>
+        <br/>
+        <textarea name=""UserAddress rows="7" cols="52">
+        Enter your address here
+        </textarea>
+    </form> -->
+    <form>
+        <h1>Select your Free Hot Drink</h1>
+        <input type="radio" name="Drink" Value="Tea"/>Tea
+        <br/>
+        <input type="radio" name="Drink" Value="Coffee"/>Coffee aka Poison
+        <br/>
+        <input type="radio" name="Drink" Value="Hot Choc"/>Hot Choc
+        <br/>
+        <h1>Select your Cake Slices - Max of 2</h1>
+        <!-- Multiple element is not working -->
+        <select id="cake" name="cake" size="5" multiple>
+                <option value="None">None</option>    
+                <option value="Carrot Cake">Carrot Cake</option>
+                <option value="Cheese Cake">Cheese Cake</option>
+                <option value="Chocolate Cake">Chocolate Cake</option>
+                <option value="Coffee Cake">Coffee Cake</option>
+        </select>
+        <br/>
+        <!-- Drop down creation element is not working -->
+        <input list="Dietary Requirements"/>
+        <datalist id="dietyary Requirements">
+                <option value="Dairy"></option>              
+                <option value="Gluten"></option>
+                <option value="Potato"></option>
+        </datalist>
+        <br/>
+        <input type="submit" name="Submitbtn" value="Place Order"/>
+    </form>
+
+    <!-- Create form with the following criteria:
     Action to redirect to "index.html"
     Method "post"
     h1 with the value of "Sign up form"
     Legend with the value of "Your basic info"
     Name, Email and Password input fields
     Gender radio selection
-    Button with the value of "Sign Up!"
-    </p>
-    <form method="post" action="script/subscribe.pl"></form>
-    Please enter your name:
-    <input type=""Text" name= "UserName"/>
+    Button with the value of "Sign Up!" -->
 </body>
 </html>
