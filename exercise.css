@@ -9,6 +9,13 @@ body {
 h2.Recipe{
     color:rgb(11, 4, 95);
 }
+table {
+    margin: 50px; /*50px in all directions*/
+    margin: 10px 5px; /*10px for T & B, 5px for L & R*/
+    margin: 20px 15px 10px 25px; /*Top, Left, Botton, Right*/
+    margin-bottom: 5px /*specific direction*/
+}
+
 /* h1 {
     color: navy;
     margin-left: 20px;
