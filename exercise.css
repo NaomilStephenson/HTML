@@ -1,7 +1,69 @@
 body {
-    background-color: bisque;
+    background-color: rgb(249, 250, 225);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
-h1 {
+#MainTitle{
+    color:blueviolet;
+}
+h2.Recipe{
+    color:rgb(11, 4, 95);
+}
+/* h1 {
     color: navy;
     margin-left: 20px;
+} */
+/* header {
+    transform: rotate(20deg);
+    transform: translate(50px, 50px);
+    transform: scale(-2,2);
+    transform: skew(20deg,20deg);
+} */
+/* h1, h2, p {
+    text-align: center;
+    color: red;
+} */
+/* ul li {
+    color:purple;
+} */
+/* section > Header {
+    background-color: blue;
+} */
+/* section ~ p {
+    colour:red;
+} */
+/* h2 + p {
+    color:aqua;
+} */
+
+/* Pseudo-Class/Pseudo-Elements */
+a {color:blue}
+a:link {color: red;}
+a:visited {color:purple;}
+a:hover {color:green;}
+a:active {color:orange;}
+
+selector::pseudo-element{
+    property:value;
 }
+
+/* p::first-line {
+    color: red;
+    font-variant:small-caps;
+} */
+/* p::first-letter {
+    color: red;
+    font-weight: bold;
+} */
+/* dd::before {
+    color: red;
+    font-variant:small-caps;
+} */
+/* h1::after{
+    color: red;
+    font-variant:small-caps;
+} */
+/* ::selection {
+    color: red;
+    background: yellow;
+} */
